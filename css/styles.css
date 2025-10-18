@@ -527,7 +527,7 @@ color: var(--cloud);
   min-width: 165px;
   height: 40px;
 }
-.tele{
+.foot-btn .footer-svg-icon{
   height:24;
   width:24;
   margin-left: 16px;
