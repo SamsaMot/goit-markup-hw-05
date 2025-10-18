@@ -478,3 +478,19 @@ color: var(--cloud);
   margin: 0;
   color:var(--cloud);
 }
+.footer-input{
+  display: flex;
+  flex-direction: column;
+}
+.foot-form{
+  display: flex;
+  gap:24px;
+}
+.footer-input-par{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color:#FFFFFF;
+  margin-bottom:16px;
+} 
