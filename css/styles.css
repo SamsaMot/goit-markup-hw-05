@@ -554,23 +554,29 @@ font-weight: 500;
 font-size: 16px;
 line-height: 150%;
 letter-spacing: 0.02em;
-color: var(--white);
+color: #ffffff;
 margin-bottom: 16px;
+
 }
 .foot-form {
   display: flex;
+  gap :24px;
  flex-direction: row;
 }
 .foot-input {
-    border: 1px solid #FFFFFF; /* исправлено: добавлено solid */
+    border: 1px solid #FFFFFF;
     border-radius: 4px;
     width: 264px;
     height: 40px;
     background-color: #2e2f42;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-    color: #FFFFFF; /* добавлен цвет текста */
-    padding-left: 16px; /* добавлен отступ для текста */
-    margin-right:24px;
+    color: #FFFFFF; 
+    padding-left: 16px; 
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+   
 }
 
 
@@ -580,9 +586,10 @@ margin-bottom: 16px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 12px;
   height: 40px;
-  width: 165px;
+  min-width: 165px; 
+  line-height: 1.5;
+  letter-spacing: 0.04em;
   padding: 8px 24px;
   font-weight: 500;
   font-size: 16px;
@@ -602,4 +609,5 @@ margin-bottom: 16px;
 
 .footer-svg-icon {
   fill: #ffffff;
+  margin-left: 16px;
 }
