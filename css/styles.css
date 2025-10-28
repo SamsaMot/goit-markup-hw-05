@@ -194,9 +194,7 @@ a {
   background-color: #4D5AE5;
   transition :background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* У кнопки в класі заданий стиль transition зі значенням 
-background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
-для плавної зміни кольору фону елемента*/
+
 .first-btn:hover,
 .first-btn:focus {
   background-color: #404bbf;
@@ -373,8 +371,7 @@ background-color: #404bbf
   transition:transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transform: translateY(100%);
 }
-/* Для параграфа, у класі, заданий стиль transform: translateY(100%); 
-що змінює позицію елемента вздовж осі Y*/
+
 .forth-item:hover .app-desc{
     transform: translateY(0%);
 
@@ -522,11 +519,8 @@ color: #FFFFFF;
 }
 
 .footer-input{
-  display: flex;
   flex-direction: column;
-  width: 453px;
-height: 80px;
-margin-left: 100px;
+  margin-left: auto;
 }
 .footer-input-par {
   font-family: var(--font-family);
@@ -556,7 +550,9 @@ margin-bottom: 16px;
     font-size: 12px;
     line-height: 2;
     letter-spacing: 0.04em;
-   
+}
+.foot-input::placeholder {
+  color: #ffffff;
 }
 
 
@@ -592,19 +588,23 @@ margin-bottom: 16px;
   margin-left: 16px;
 }
 
-.backdrop{
+.backdrop {
+  opacity: 0;
+  visibility: hidden;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000;
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.backdrop:target {
+  opacity: 1;
+  visibility: visible;
+}
+
 .modal {
   width: 408px;
   min-height: 584px;
@@ -709,6 +709,7 @@ text-align: center;
 
 }
 .modal-span{
+  margin:6px;
  width: 16px;
  height: 16px;
  border: 1px solid rgba(46, 47, 66, 0.4);
@@ -720,7 +721,7 @@ justify-content: center;
 fill: transparent;
 }
 input:checked + .checkbox .modal-span {
-  background-color: #404bbf; /* або var(--iris) */
+  background-color: #404bbf; 
   border: none;
   fill: #f4f4fd;
 }
@@ -756,8 +757,10 @@ input:checked + .checkbox .modal-span {
 }
 .link-label{
   color:#4d5ae5;
+  text-decoration: underline;
 }
 .modal-submit-btn{
+  border-radius: 4px;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -773,5 +776,10 @@ input:checked + .checkbox .modal-span {
   background-color: #4D5AE5;
   border: none; ;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
