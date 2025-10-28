@@ -670,10 +670,12 @@ text-align: center;
   left: 16px;
   top: 50%;
   transform: translateY(-50%);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: #2E2F42; 
 }
-.modal-input:focus .modal-icon {
-  fill:#4D5AE5;
+.modal-input:focus + .modal-icon,
+.modal-input:hover + .modal-icon {
+  color: #4D5AE5;
 }
 .form-comment{
   margin-bottom: 16px;
@@ -756,6 +758,8 @@ input:checked + .checkbox .modal-span {
   color:#4d5ae5;
 }
 .modal-submit-btn{
+  margin-left: auto;
+  margin-right: auto;
   display: block;
   min-width: 169px;
   height: 56px;
