@@ -716,10 +716,12 @@ display: inline-flex;
 align-items: center;
 justify-content: center;
 fill: transparent;
-
- 
 }
-
+input:checked + .checkbox .modal-span {
+  background-color: #404bbf; /* або var(--iris) */
+  border: none;
+  fill: #f4f4fd;
+}
 
 .modal-btn {
     border-radius: 4px;
